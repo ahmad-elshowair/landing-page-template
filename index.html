@@ -8,8 +8,9 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&display=swap"
     />
-    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/grid_system.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
@@ -123,7 +124,7 @@
       <div class="overlay"></div>
       <!-- start header -->
       <div class="container">
-        <header class="header-area">
+        <nav class="header-area">
           <div class="logo">
             <a href="index.html"><span>F</span>irst <span>D</span>esign</a>
           </div>
@@ -145,17 +146,18 @@
               <span></span>
             </button>
           </div>
-        </header>
-      </div>
+        </nav>
 
-      <!-- end header -->
-      <div class="introduction-text">
-        <h1>We are <span>creative</span> Agency</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
-          deserunt. Iusto necessitatibus molestiae doloremque? Distinctio
-          exercitationem.
-        </p>
+        <!-- end header -->
+
+        <div class="introduction-text">
+          <h1>We are <span>creative</span> Agency</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum,
+            deserunt. Iusto necessitatibus molestiae doloremque? Distinctio
+            exercitationem.
+          </p>
+        </div>
       </div>
     </div>
     <!-- end landing page -->
@@ -427,7 +429,7 @@
         <div class="container">
           <h4 class="title">Contact Us</h4>
           <form action="">
-            <div class="left">
+            <div class="form_content">
               <input type="text" placeholder="Your Name" name="username" />
               <input
                 type="number"
@@ -437,7 +439,7 @@
               <input type="email" placeholder="Your Email" name="email" />
               <input type="text" placeholder="Subject" name="subject" />
             </div>
-            <div class="right">
+            <div class="form_content">
               <textarea name="message" placeholder="Your Message"></textarea>
               <input type="submit" value="Send" />
             </div>
@@ -448,7 +450,14 @@
 
       <!-- ========================== START FOOTER SECTION ========================== -->
       <footer>
-        <h4>created with <i class="fas fa-heart"></i> by Ahmad Elshowair</h4>
+        <ul>
+          <li>
+            <h4>&copy; First Deign</h4>
+          </li>
+          <li>
+            <h4>created by Ahmad Elshowair</h4>
+          </li>
+        </ul>
       </footer>
       <!-- ========================== END FOOTER SECTION ========================== -->
     </main>
