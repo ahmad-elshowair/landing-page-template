@@ -175,6 +175,64 @@
     font-size: 12px;
   }
   /* ++++++++++++++++++++++++++ END FEATURE SECTION STYLE ++++++++++++++++++++++++++ */
+
+  /* ++++++++++++++++++++++++++ START TESTIMONIAL SECTION STYLE ++++++++++++++++++++++++++ */
+  .testimonial {
+    padding: 60px 25px;
+  }
+  .testimonial .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+  }
+  .testimonial .ts-box {
+    width: 100%;
+    float: none;
+    border: 1px solid;
+  }
+
+  .testimonial .ts-box > p {
+    font-size: 15px;
+    line-height: 1;
+  }
+  .testimonial .ts-box .person-data {
+    display: flex;
+  }
+  .testimonial .ts-box .person-info {
+    margin: 0;
+    flex: 2;
+  }
+  .testimonial .ts-box .person-data .person-image {
+    float: none;
+    flex: 1;
+  }
+  /* ++++++++++++++++++++++++++ END TESTIMONIAL SECTION STYLE ++++++++++++++++++++++++++ */
+
+  /* ++++++++++++++++++++++++++ START CONTACT SECTION STYLE ++++++++++++++++++++++++++ */
+
+  .contact-us .title::before {
+    left: 20%;
+  }
+  .contact-us .title::after {
+    right: 20%;
+  }
+
+  .contact-us form {
+    flex-direction: column;
+  }
+  .contact-us form .form_content {
+    width: 100%;
+  }
+  /* ++++++++++++++++++++++++++ END CONTACT SECTION STYLE ++++++++++++++++++++++++++ */
+
+  /* ++++++++++++++++++++++++++ START FOOTER STYLE ++++++++++++++++++++++++++ */
+  footer h4 {
+    font-size: 16px;
+  }
+
+  /* ++++++++++++++++++++++++++ END FOOTER STYLE ++++++++++++++++++++++++++ */
 }
 
 /* 
