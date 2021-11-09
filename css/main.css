@@ -11,7 +11,8 @@ body {
 }
 
 .container {
-  width: 1170px;
+  max-width: 1170px;
+  width: 100%;
   margin: auto;
   padding: 0 15px;
 }
@@ -23,11 +24,15 @@ body {
   position: fixed;
   width: 200px;
   z-index: 1000;
-  top: 0;
+  top: 5%;
   background-color: rgb(0 0 0 / 36%);
   left: -200px;
   transition: all ease-in-out 1s;
-  min-height: 100vh;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
 }
 
 .settings-box .toggle-settings {
@@ -328,7 +333,7 @@ body {
 }
 
 .landing-page .introduction-text {
-  z-index: 2;
+  z-index: 1;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -677,17 +682,22 @@ body {
 .feature-section {
   padding: 80px 0;
 }
-
-.feature-section .feat-box {
-  width: calc(100% / 3);
-  float: left;
-  margin-bottom: 40px;
+.feature-section .title {
+  margin-bottom: 50px;
+}
+.feature-section .box_features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
   text-align: center;
 }
-.feature-section .feat-box:nth-of-type(4),
-.feature-section .feat-box:nth-of-type(5),
-.feature-section .feat-box:nth-of-type(6) {
-  margin-bottom: 0;
+
+.feature-section .feat-box {
+  border-radius: 10px;
+  width: 100%;
+  float: none;
+  background-color: #fdf5ea;
+  padding: 15px;
 }
 
 .feature-section .feat-box img {
@@ -760,18 +770,17 @@ body {
   margin-right: -18px;
 }
 
-.testimonial .ts-box {
-  position: relative;
-  z-index: 2;
-  background: #fff;
-  width: calc(96% / 3);
-  float: left;
-  padding: 15px;
-  border-radius: 10px;
+.testimonial .testimonial_boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
 }
 
-.testimonial .ts-box:not(:last-child) {
-  margin-right: 2%;
+.testimonial .ts-box {
+  z-index: 2;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .testimonial .ts-box > p {
@@ -815,10 +824,6 @@ body {
 }
 .testimonial .ts-box .person-info .person-name {
   margin: 15px 0 9px;
-}
-
-.testimonial .ts-box .person-info .person-postion {
-  margin: 0;
 }
 
 /* end testimonial section style  */
